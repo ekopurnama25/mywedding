@@ -1,0 +1,196 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 20px; /* Add some padding for better visibility */
+}
+
+@media (max-width: 768px) {
+  img {
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+}
+
+.absolute {
+  position: absolute;
+}
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.unlock-regular {
+  font-family: "Unlock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caveat-custom {
+  font-family: "Caveat", cursive; /* Mengatur font yang digunakan */
+  font-optical-sizing: auto; /* Mengatur ukuran optik font (jika didukung) */
+  font-weight: 400; /* Ketebalan font (normal) */
+  font-style: normal; /* Gaya font (normal, tidak miring) */
+}
+
+/* animasi pertemuan */
+@keyframes fallIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scale(1.2);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10%) scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fall-in {
+  animation: fallIn 1s ease forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); /* Memulai dari luar layar di kanan */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Akhirnya di posisi normal */
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); /* Memulai dari luar layar di kanan */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Kembali ke posisi normal */
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 1.5s ease-out forwards; /* Durasi 1.5 detik */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.slide-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* animasi kalender */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block; /* Menampilkan konten */
+}
+
+
+#modal {
+  display: flex; /* Pastikan modal menggunakan flexbox */
+  align-items: center;
+  justify-content: center;
+  z-index: 50; /* Pastikan modal di atas elemen lainnya */
+}
+
+.relative {
+  position: relative; /* Pastikan relative untuk positioning */
+}
+
+.overflow-hidden {
+  overflow: hidden; /* Menghilangkan bagian gambar yang melampaui batas */
+}
+
+.rounded-full {
+  border-radius: 50%; /* Membuat gambar menjadi bundar */
+}
+
+.w-32 {
+  width: 8rem; /* Mengatur lebar */
+}
+
+.h-32 {
+  height: 8rem; /* Mengatur tinggi */
+}
+
+.border {
+  border-width: 2px; /* Atur ketebalan border sesuai kebutuhan */
+}
+
+.border-yellow-700 {
+  border-color: #c5a10a; /* Ganti dengan warna sesuai kebutuhan */
+}
+
+.object-cover {
+  object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi */
+}

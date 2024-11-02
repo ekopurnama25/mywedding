@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNDANGAN | Novia & Eko</title>
+    <link
+      rel="icon"
+      href="./assert/base-logo-in-blue.svg"
+      type="image/x-icon" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet" />
+      <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Kablammo&family=Lobster&family=Rubik+Wet+Paint&family=Unlock&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DynaPuff:wght@400..700&family=Kablammo&family=Lobster&family=Rubik+Wet+Paint&family=Unlock&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <link href="./mystyle.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-rose-500 h-screen">
+    <div
+      id="loading"
+      class="fixed inset-0 flex items-center justify-center bg-white bg-opacity-75 z-50 hidden">
+      <div class="loader"></div>
+    </div>
+    <div id="content" class="h-full flex items-center justify-center relative">
+      <div class="flex flex-row border-2 w-full h-full relative">
+        <div class="flex-grow h-full relative">
+          <img
+            src="./assert/0254-13@1261118284.jpg"
+            class="w-full h-full object-cover"
+            alt="Full Body Image" />
+
+          <!-- Text Container with Semi-Transparent Background -->
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-red-300 bg-opacity-50 text-white text-center p-4">
+            <div
+              class="mb-44 flex flex-col items-center justify-center text-center">
+              <img
+                src="./assert/pngtree-the-wedding-text-png-image_17708-removebg-preview.png"
+                width="140"
+                height="100" />
+              <h1
+                class="text-5xl font-bold dancing-script-custom text-gray-700 lobster-regular">
+                Novia & Eko
+              </h1>
+              <h1
+                class="text-sm font-bold dancing-script-custom text-gray-700 mt-1 lobster-regular">
+                Selasa, 31 Desember 2024
+              </h1>
+            </div>
+
+            <div class="flex flex-row items-center justify-center space-x-2 mb-4">
+              <h1 class="text-2xl dancing-script-custom text-gray-700 font-bold text-center border-gray-400 pl-2 lobster-regular">
+                Selasa,
+              </h1>
+              <h1 class="text-2xl dancing-script-custom text-gray-700 font-bold text-center border-l-4 border-gray-700 pl-2 lobster-regular">
+                31
+              </h1>
+              <h1 class="text-2xl dancing-script-custom text-gray-700 font-bold text-center border-l-4 border-gray-700 pl-2 lobster-regular">
+                12
+              </h1>
+              <h1 class="text-2xl dancing-script-custom text-gray-700 font-bold text-center border-l-4 border-gray-700 pl-2 lobster-regular">
+                2024
+              </h1>
+            </div>
+            
+
+            <div class="mb-18">
+              <h2 class="text-sm dancing-script-custom text-gray-700 lobster-regular">Kepada Yth :</h2>
+
+              <h2 class="text-2xl font-bold dancing-script-custom text-gray-700 m-2 lobster-regular">Nama Tamu</h2>
+
+              <h2 class="text-sm dancing-script-custom text-gray-700 lobster-regular">Di Tempat</h2>
+
+              <a
+                href="./page.html"
+                class="flex items-center m-2 bg-transparent font-bold border-2 border-gray-700 text-gray-700 rounded-full py-1 px-4 text-sm hover:bg-gray-500 hover:text-white transition">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope mr-2"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                </svg>
+                Buka Undangan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // Show loading spinner when navigating
+    document.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default navigation
+        const loadingSpinner = document.getElementById("loading");
+        loadingSpinner.classList.remove("hidden");
+
+        // Simulate a page load delay (e.g., 3 seconds)
+        setTimeout(() => {
+          // Redirect or load the new page here
+          window.location.href = link.href; // Navigate to the clicked link
+        }, 3000); // Adjust the timeout as needed
+      });
+    });
+  </script>
+</html>
